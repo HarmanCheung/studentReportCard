@@ -53,7 +53,7 @@ function printReportCard() {
             }
         }
     }
-    if (studentNumberSplit.length > 0){
+    if (studentInfoArray.length > 0){
         console.log('成绩单');
         console.log('姓名|数学|语文|英语|编程|平均分|总分');
         console.log('=========================');
