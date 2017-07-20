@@ -10,14 +10,23 @@ var studentInfoRepository = new Array;
 var studentInfoArray = new Array;
 
 function main(userChoice){
-
-    if(userChoice == 1) {
-        addStudent();
+    switch (userChoice){
+        case '1':
+            addStudent();
+            break;
+        case '2':
+            printReportCard();
+            break;
+        case '3':
+            break;
+        default:
+            console.log('1.添加学生');
+            console.log('2.生成成绩单');
+            console.log('3.退出');
+            let rechoice = readlineSync.question('请输入你的选择（1～3）');
+            main(rechoice);
     }
 
-    if(userChoice == 2){
-        printReportCard();
-    }
 }
 
 main(choice);
