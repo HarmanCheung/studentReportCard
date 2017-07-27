@@ -1,3 +1,1 @@
-/**
- * Created by zhm on 17-7-20.
- */
+let mainjs = require('../main/main');

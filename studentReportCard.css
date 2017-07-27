@@ -1,0 +1,14 @@
+.table-striped{
+    width: 100%;
+    top: 100px;
+    position: absolute;
+    border-style: double;
+}
+input{
+    width: 150px;
+}
+#printReportCard{
+    position: absolute;
+    left: 45%;
+    top: 50px;
+}

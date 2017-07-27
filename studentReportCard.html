@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="studentReportCard.css">
+    <script src="studentReportCard.js"></script>
+<body>
+<form id = 'reportCard'>
+    <table class="table table-striped">
+        <caption style="font-size: 200%;color: crimson">学生成绩单</caption>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>数学</th>
+            <th>语文</th>
+            <th>英语</th>
+            <th>编程</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+</form>
+<form name="input" id="studentInfo" method="get" >
+    <p style="float: left">姓名: <input type="text" name="name" id="name"/></p>
+    <p style="float: left">学号: <input type="text" name="id" id="ID" /></p>
+    <p style="float: left">民族: <input type="text" name="nation" id="nation" /></p>
+    <p style="float: left">班级: <input type="text" name="class" id="class" /></p>
+    <p style="float: left">数学: <input type="text" name="math" id="sbuject1" /></p>
+    <p style="float: left">语文: <input type="text" name="chinese" id="subject2" /></p>
+    <p style="float: left">英语: <input type="text" name="english" id="subject3" /></p>
+    <p style="float: left">编程: <input type="text" name="programming" id="subject4" /></p>
+    <input type="submit" id="submitStudentInfo" value="Submit" />
+</form>
+<form id="printReportCard" >
+    <input type="text" name="studentID" id="studentID"  />
+    <input type="submit" id="find" value="查询" />
+</form>
+
+</body>
+</html>
